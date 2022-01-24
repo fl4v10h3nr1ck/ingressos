@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ingresso" pageWidth="130" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="130" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="a7ec2032-f504-4a04-9ff5-a3563f49b3c4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="cont" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cidade" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade]]></fieldDescription>
+	</field>
+	<field name="codigo" class="java.lang.String">
+		<fieldDescription><![CDATA[codigo]]></fieldDescription>
+	</field>
+	<field name="fones" class="java.lang.String">
+		<fieldDescription><![CDATA[fones]]></fieldDescription>
+	</field>
+	<field name="data" class="java.lang.String">
+		<fieldDescription><![CDATA[data]]></fieldDescription>
+	</field>
+	<field name="hora" class="java.lang.String">
+		<fieldDescription><![CDATA[hora]]></fieldDescription>
+	</field>
+	<field name="lote" class="java.lang.String">
+		<fieldDescription><![CDATA[lote]]></fieldDescription>
+	</field>
+	<field name="tipo_preco" class="java.lang.String">
+		<fieldDescription><![CDATA[tipo_preco]]></fieldDescription>
+	</field>
+	<field name="cnpj" class="java.lang.String">
+		<fieldDescription><![CDATA[cnpj]]></fieldDescription>
+	</field>
+	<field name="logo_empresa" class="java.lang.String">
+		<fieldDescription><![CDATA[logo_empresa]]></fieldDescription>
+	</field>
+	<field name="local" class="java.lang.String">
+		<fieldDescription><![CDATA[local]]></fieldDescription>
+	</field>
+	<field name="site_email" class="java.lang.String">
+		<fieldDescription><![CDATA[site_email]]></fieldDescription>
+	</field>
+	<field name="preco" class="java.lang.String">
+		<fieldDescription><![CDATA[preco]]></fieldDescription>
+	</field>
+	<field name="tipo_lote" class="java.lang.String">
+		<fieldDescription><![CDATA[tipo_lote]]></fieldDescription>
+	</field>
+	<field name="nome_evento" class="java.lang.String">
+		<fieldDescription><![CDATA[nome_evento]]></fieldDescription>
+	</field>
+	<field name="empresa" class="java.lang.String">
+		<fieldDescription><![CDATA[empresa]]></fieldDescription>
+	</field>
+	<field name="logo_evento" class="java.lang.String">
+		<fieldDescription><![CDATA[logo_evento]]></fieldDescription>
+	</field>
+	<field name="url_qrcode" class="java.lang.String">
+		<fieldDescription><![CDATA[url_qrcode]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="619" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="62" width="130" height="25" isPrintWhenDetailOverflows="true" uuid="4102ee36-f67f-4d3d-a110-0659e69dddfb">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INGRESSO]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="47" width="130" height="15" isPrintWhenDetailOverflows="true" uuid="95780d9a-e13c-4c8b-9fe5-3514edcd34ef">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome_evento}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="87" width="40" height="15" isPrintWhenDetailOverflows="true" uuid="8c68456a-4e3d-4c4a-853b-911c648b50e1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="117" width="40" height="15" isPrintWhenDetailOverflows="true" uuid="1ed348b4-8bbd-4efc-91de-91bf50504ada">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Local:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="147" width="40" height="15" isPrintWhenDetailOverflows="true" uuid="2b617bc3-b443-4e43-a677-5686c124124a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="102" width="130" height="15" isPrintWhenDetailOverflows="true" uuid="82fd09f1-a18f-4c64-9b64-737e26a9a296">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cidade}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="132" width="130" height="15" isPrintWhenDetailOverflows="true" uuid="faf19c96-5a7b-47b5-bc0c-56def863dd7d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{local}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="162" width="60" height="15" isPrintWhenDetailOverflows="true" uuid="5e273d5c-e436-4e8d-bd6d-64676af16c46">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="217" width="60" height="14" isPrintWhenDetailOverflows="true" uuid="66e69b5f-49c3-424d-859e-aee14ae779a3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Realização:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="230" width="130" height="11" isPrintWhenDetailOverflows="true" uuid="41c1f5fc-ed4f-4f7b-889b-8c36819f75c4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empresa}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="241" width="130" height="11" isPrintWhenDetailOverflows="true" uuid="99e0c266-f252-4a66-8eac-a25b5d973b56">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fones}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="352" width="130" height="1" isPrintWhenDetailOverflows="true" uuid="c672f098-80c7-493f-97a8-d87e2e355d32">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<componentElement>
+				<reportElement positionType="Float" mode="Opaque" x="10" y="354" width="120" height="25" isPrintWhenDetailOverflows="true" uuid="4b97566b-686f-4164-ad93-1e88fb50826f">
+					<property name="com.jaspersoft.studio.unit.barWidth" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="EAN13" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{codigo}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<line>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="392" width="130" height="1" isPrintWhenDetailOverflows="true" uuid="7cbfa378-aa72-4c4b-b686-ab654502c490">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="60" y="147" width="40" height="15" isPrintWhenDetailOverflows="true" uuid="9d469c38-9544-4da2-a763-402eae9f57ca">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horário:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="60" y="162" width="70" height="15" isPrintWhenDetailOverflows="true" uuid="cb07dc1b-d20c-432b-beaa-4a20c419f9c5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hora}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="177" width="130" height="20" isPrintWhenDetailOverflows="true" uuid="7789a358-b994-4d86-a3a7-4ddcd3463abf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo_preco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="197" width="60" height="20" isPrintWhenDetailOverflows="true" uuid="a7b59a52-3cf5-46df-a51a-f69b23a28c26">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo_lote}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" isPrintRepeatedValues="false" mode="Opaque" x="0" y="379" width="130" height="13" isPrintWhenDetailOverflows="true" uuid="3924adf8-4760-4a0d-8518-6212ce99c14a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" mode="Opaque" x="15" y="252" width="100" height="100" isPrintWhenDetailOverflows="true" uuid="caf01089-96fa-4424-be76-28cf97a19658">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA[$F{url_qrcode}]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement mode="Transparent" x="0" y="0" width="130" height="47" isPrintWhenDetailOverflows="true" uuid="d2b1daf1-1ea0-48d1-8cde-5068d20356a2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{logo_evento}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="60" y="197" width="70" height="20" isPrintWhenDetailOverflows="true" uuid="e7fc3edd-11c7-473f-88af-4c9f5abb438c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{preco}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="398" width="129" height="14" forecolor="#FFFFFF" uuid="a858d25e-ff83-417f-8c5a-4e8903a727e5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[29 86 0]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
